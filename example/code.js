@@ -6,7 +6,7 @@ const plugin = require('../');
 const fs = require('fs');
 const path = require('path');
 
-const sourceCode = fs.readFileSync(path.join(__dirname, './example.es'), {
+const sourceCode = fs.readFileSync(path.join(__dirname, './example.js'), {
   encoding: 'utf-8'
 });
 
