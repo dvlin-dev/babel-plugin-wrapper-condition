@@ -8,3 +8,15 @@ module.exports = function () {
   func();
   console.log(456)
 }
+
+// wrapper
+console.error(123)
+
+// wrapper
+1 + 1 === 2;
+
+
+function funcA() {}
+
+// ONLE_IN_PROD
+funcA()

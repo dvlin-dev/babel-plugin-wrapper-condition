@@ -19,8 +19,11 @@ const {
 } = transformFromAstSync(ast, sourceCode, {
   plugins: [
     [plugin, {
+      wrapperlog:true,
       nodeEnv: "NODE_ENV",
-      deployState: "production"
+      deployState: "production",
+      comment: true,
+      commentField: 'ONLE_IN_PROD'
     }]
   ]
 });

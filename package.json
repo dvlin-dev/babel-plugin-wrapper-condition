@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-wrapper-dev",
+  "name": "babel-plugin-wrapper-condition",
   "version": "0.0.1",
   "description": "babel plugin wrapper condition in dev",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bowlingQ/babel-plugin-wrapper-dev.git"
+    "url": "git+https://github.com/bowlingQ/babel-plugin-wrapper-condition.git"
   },
   "keywords": [
     "babel-plugin",
@@ -20,9 +20,9 @@
   "author": "bowling",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bowlingQ/babel-plugin-wrapper-dev/issues"
+    "url": "https://github.com/bowlingQ/babel-plugin-wrapper-condition/issues"
   },
-  "homepage": "https://github.com/bowlingQ/babel-plugin-wrapper-dev#readme",
+  "homepage": "https://github.com/bowlingQ/babel-plugin-wrapper-condition#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/parser": "^7.20.13",

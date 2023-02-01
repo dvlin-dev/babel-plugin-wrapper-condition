@@ -1,8 +1,11 @@
 module.exports = ({
   template
 }, {
-  nodeEnv,
-  deployState
+  wrapperlog = true,
+  nodeEnv = 'NODE_ENV',
+  deployState = 'production',
+  comment = false,
+  commentField = 'wrapper'
 }) => {
 
   const wrapperIfTemplate = template(
@@ -18,7 +21,7 @@ module.exports = ({
   return {
     visitor: {
       CallExpression(path) {
-        if (path.node.callee.property && path.node.callee.property.name === "log") {
+        if (wrapperlog && path.node.callee.property && path.node.callee.property.name === "log") {
           path.replaceWith(
             wrapperIfTemplate({
               NODE: path.node
@@ -26,6 +29,18 @@ module.exports = ({
           );
           path.skip();
         }
+      },
+      ExpressionStatement(path){
+        if(!comment) return;
+        const isComment = path.node.leadingComments ? path.node.leadingComments.some(item=>item.value.includes(commentField)) :false
+        if(isComment) {
+           path.replaceWith(
+            wrapperIfTemplate({
+              NODE: path.node
+            })
+          );
+          path.skip();                                                                      
+         }
       }
     }
   };

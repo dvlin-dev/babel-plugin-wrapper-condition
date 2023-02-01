@@ -7,8 +7,11 @@ require("@babel/register")({
     [
       plugin,
       {
+        wrapperlog:true,
         nodeEnv: "NODE_ENV",
-        deployState: "production"
+        deployState: "production",
+        comment: true,
+        commentField: 'wrapper'
       }
     ]
   ],
