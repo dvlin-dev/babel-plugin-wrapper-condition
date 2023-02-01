@@ -1,4 +1,6 @@
 # babel-plugin-wrapper-condition
+[english](https://github.com/bowlingQ/babel-plugin-wrapper-condition/blob/main/README.md) / 中文
+
 一个用条件语句来包裹代码的 babel 插件，通常用于将本地调试代码扼杀在线上环境
 ## Example
 使用之前的代码:

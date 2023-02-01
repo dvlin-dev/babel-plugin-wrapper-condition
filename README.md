@@ -1,4 +1,6 @@
 # babel-plugin-wrapper-condition
+english / [中文](https://github.com/bowlingQ/babel-plugin-wrapper-condition/blob/main/README_CN.md)
+
 A babel plug-in that wraps the code with conditional statements, which is usually used to kill the local debugging code in the online environment
 ## Example
 code:
