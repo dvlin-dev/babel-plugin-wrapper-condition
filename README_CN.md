@@ -5,10 +5,10 @@
 ## Example
 使用之前的代码:
 ```
-  console.log(456)
+console.log(456)
 
-  // wrapper
-  1 + 1 === 1
+// wrapper
+1 + 1 === 1
 ```
 使用之后将转换为
 ```
